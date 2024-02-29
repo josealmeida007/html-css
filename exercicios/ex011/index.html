@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Teste abrir este site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho o seu navegador</p>
+    <picture>
+        <source media="(min-width: 1050px)" srcset="imagens/foto-g.png" type="image/png">
+        <source media="(min-width: 750px)" srcset="imagens/foto-m.png" type="image/png">
+       <img src="imagens/foto-p.png" alt="imagem flexivel">
+    </picture>
+    <!--<picture>
+        <source media="(max-width: 700px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1000px)" srcset="imagens/foto-m.png" type="image/png">
+       <img src="imagens/foto-g.png" alt="imagem flexivel">
+    </picture>-->
+    <h2>Reproduzido Áudio</h2>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+    <audio preload="metadata" controls loop >
+        <source src="midia/happydogishappy.mp3" type="audio/mpeg">
+        <source src="midia/happydogishappy.ogg" type="audio/ogg">
+        <source src="midia/happydogishappy.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não consegure reproduzer áudio, <a href="midia/happydogishappy.mp3">clique aqui para baixar o arquivo MP3</a></p>
+    </audio>
+</body>
+</html>

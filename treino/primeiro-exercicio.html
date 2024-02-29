@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Título, parágrafo e imagem</title>
+    <style>
+        *{
+            margin: 10px;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1{
+            text-decoration: underline;
+            color: blue;
+        }
+        p{
+            
+        }
+        .first-p{
+            line-height: 20px;
+            color: red;
+            font-size: 1.1em;
+        }
+        img{
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            top: 50%;
+            left: 70%;
+            transform: translate(-50%, -50%);
+        }
+        table{
+            margin: 80px 0 0 200px;
+            border-collapse: collapse;
+        }
+        th,td{
+            border: 1px solid black;
+            padding: 10px;
+        }
+        th{
+            color: white;
+            background-color: #333333;
+            text-transform: uppercase;
+        }
+        td{
+            background-color: #aeaeae;
+        }
+        caption{
+            margin-bottom: 20px;
+        }
+        form{
+            width: auto;
+        }
+        input{
+            outline: none;
+            display: block;
+        }
+        label{
+            color: darkblue;
+        }
+        button{
+            display: inline;
+        }
+        nav{
+            background-color: #8f8f8f;
+            width: 50%;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            margin-left: 250px;
+        }  
+        li{
+            list-style: none;
+            display: inline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">primeiro</a></li>
+                <li><a href="#">segundo</a></li>
+                <li><a href="#">terceiro</a></li>
+                <li><a href="#">quarto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Lorem</h1>
+    <p class="first-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad excepturi debitis velit atque tempore voluptates architecto quaerat provident deleniti nisi? Totam, laudantium! Error id atque cupiditate natus dicta, consequatur maiores.</p>
+    <img src="Dell-xps-13.jpg" alt="pc-dell-xps" title="dell-xps-13 _ computer">
+    <!-- table -->
+    <table>
+        <caption>Obs: Os dados da tabela abaixo não são verdadeiros, simplesmente foram imaginados pelo autor do site.</caption>
+        <tr>
+            <th>filmes</th>
+            <th>ano</th>
+            <th>protagonista</th>
+        </tr>
+        <tr>
+            <td>Os crood</td>
+            <td>2010</td>
+            <td>A família Croods</td>
+        </tr>
+        <tr>
+            <td>O infiltrado</td>
+            <td>2021</td>
+            <td>Paul</td>
+        </tr>
+        <tr>
+            <td>Poker face</td>
+            <td>2022</td>
+            <td>Max</td>
+        </tr>
+    </table>
+    <!-- formulário -->
+    <form action="">
+        <p>É necessário preencher o questionário para continuar.</p>
+
+        <label for="nom">Nome:</label> <input type="text" id="nom" maxlength="20" required>
+        <label for="idad">Idade:</label> <input type="number" name="" id="idad" required>
+        <label for="pge">Profissão/grau de estudo:</label> <input type="text" name="pge" id="pge" maxlength="10" required>
+
+        <select name="number" id="num">
+            <option value="" selected>selecionado</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select><br>
+
+        <button type="submit">Enviar</button>
+        <button type="reset">Apagar Tudo</button>
+    </form>
+</body>
+</html>

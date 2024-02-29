@@ -1,0 +1,10 @@
+body{
+    background-color: black;
+    color: white;
+    font: normal 15pt Arial;
+    text-align: center;
+}
+.p_a{
+    transition: 3s;
+}
+
