@@ -1,0 +1,141 @@
+@charset "UTF-8";
+
+:root {
+    --cor-secao-sup: rgb(190, 255, 0);
+    --cor-secao-inf: #93ff18;
+    --cor-fundo: rgb(205, 255, 205);
+    --cor-destaque: rgb(7, 52, 7);
+
+    --fonte-unica: Arial;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+body {
+    height: 100vh;
+    background-color: var(--cor-fundo);
+    font-family: var(--fonte-unica);
+    display: flex;
+    padding: 10%;
+}
+
+main {
+    height: 600px;
+    width: 500px;
+    margin: auto;
+    border: 1px solid black;
+    border-radius: 20px;
+    box-shadow: 5px 5px 1px rgba(0, 0, 0, 0.539);
+}
+
+section#secao-superior {
+    position: relative;
+    border-radius: 20px 20px 0px 0px;
+    height: 60%;
+    background-color: var(--cor-secao-sup);
+}
+
+div#num-edicao {
+    position: absolute;
+    background-color: var(--cor-destaque);
+    font-size: 0.9em;
+    width: 100px;
+    color: white;
+    text-align: center;
+    border-radius: 0px 0px 5px 5px;
+    padding: 10px 10px 5px 10px;
+
+    top: 0px;
+    right: 10%;
+}
+
+article {
+    position: absolute;
+    width: 90%;
+    display: block;
+    margin: 20px;
+    bottom: 0px;
+}
+
+article > h1 {
+    font-size: 3em;
+    text-align: right;
+    font-weight: bolder;
+    color: var(--cor-destaque);
+}
+
+article > h2 {
+    width: 90%;
+    margin-left: 13.5%;
+    padding-top: 10px;
+    font-size: 1.2em;
+    color: white;
+    text-align: center;
+}
+
+section#secao-inferior {
+    border-radius: 0px 0px 20px 20px;
+    height: 40%;
+    background-color: var(--cor-secao-inf);
+    color: white;
+}
+
+section#secao-inferior > p {
+    padding-top: 20px;
+    margin-left: 80px;
+    text-align: center;
+}
+
+div#footer {
+    position: relative;
+    box-sizing: border-box;
+    height: 130px;
+    padding: 10px;
+    margin-top: 50px;
+}
+
+div#footer-logo-editora {
+    position: absolute;
+    width: 120px;
+    text-align: center;
+
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-40%);
+}
+
+div#footer-logo-editora > img {
+    display: block;
+    width: 30px;
+    margin: auto;
+    margin-bottom: 5px;
+}
+
+div#footer-logo-editora > p {
+    text-transform: capitalize;
+    font-size: .9em;
+}
+
+aside {
+    width: 0;
+    height: 0;
+    position: relative;
+    border-left: 150px solid transparent;
+    border-bottom: 150px solid var(--cor-destaque);
+    border-bottom-right-radius: 20px;
+    bottom: 26px;
+    left: 70.9%;
+}
+
+aside > p {
+    position: absolute;
+    top: 75px;
+    right: 5px;
+    width: 100px;
+    text-align: center;
+    transform: rotate(-45deg);
+}

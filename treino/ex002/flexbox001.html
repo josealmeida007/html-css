@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox1</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: cursive;
+            background-color: lightblue;
+        }
+
+        h1 {
+            text-align: center;
+        }
+        .flex-parent {
+            background-color: blue;
+            height: 500px;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-content: center;
+        }
+
+        .flex-parent > div {
+            background-color: white;
+            padding:30px;
+            text-align: center;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Flexbox</h1>
+    <div class="flex-parent">
+        <div style="flex: 15%;">1</div>
+        <div style="flex: 75%;">2</div>
+        <div style="flex: 10%;">3</div>
+        <div style="flex: 50%;">4</div>
+        <div style="flex: 50%;">5</div>
+        <div style="flex: 25%;">5</div>
+        <div style="flex: 25%;">5</div>
+        <div style="flex: 50%;">5</div>
+    </div>
+</body>
+</html>

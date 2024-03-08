@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox2</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-image: linear-gradient(to bottom, rgb(67, 100, 2), yellowgreen);
+            height: 200px;
+            color: white;
+        }
+
+        nav {
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        nav > a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        nav > a:hover {
+            background-color: grey;
+            color: black;
+            font-weight: bold;
+        }
+
+        @media screen and (max-width: 700px) {
+            nav {
+                flex-direction: column;
+            }
+        }
+
+        .content {
+            display: flex;
+        }
+
+        .content > .block {
+            background-color: #ccc;
+            flex-grow: 2;
+            height: 200px;
+            margin: 1%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Flexbox</h1>
+        <p>Este é um layout flexível</p>
+    </header>
+    <nav>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+    </nav>
+    <section class="content">
+        <article class="block">
+
+        </article>
+        <article class="block">
+
+        </article>
+    </section>
+</body>
+</html>
