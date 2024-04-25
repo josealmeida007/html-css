@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px) {
+    span#burger {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .list__item {
+        display: inline-block; 
+    }
+
+    .list__item a {
+        border-top: none; 
+    }
+}
